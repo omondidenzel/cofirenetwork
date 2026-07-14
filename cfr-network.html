@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoFiRe-Network | CFR Network</title>
+    <meta
+      name="description"
+      content="Community Fish Reserves (CFR) Network page showing reserve locations, areas, counties, and an interactive map."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/cfr-network.css" />
+  </head>
+  <body class="cfr-page">
+    <div class="page-shell">
+      <div id="site-header"></div>
+
+      <main id="top">
+        <section class="cfr-intro section reveal" aria-label="CFR Network overview">
+          <div class="cfr-intro-content">
+            <p class="eyebrow">CFR Network</p>
+            <h1>Community Fish Reserves Network</h1>
+            <p class="section-lead">
+              The following Community Fish Reserves (CFR) constituents the Community Fish Reserves Network (CoFiRe Network).
+              The Recruitment of more CFRs is ongoing for impact at scale.
+            </p>
+          </div>
+          <div class="cfr-meta" aria-label="CFR network summary">
+            <div class="meta-item">
+              <strong class="meta-number">15</strong>
+              <span>Active Reserves</span>
+            </div>
+            <div class="meta-item">
+              <strong class="meta-number">4</strong>
+              <span>Counties</span>
+            </div>
+            <div class="meta-item">
+              <strong class="meta-number">4,814</strong>
+              <span>Total Area (Ha)</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cfr-map-wrap reveal" aria-label="Map highlighting Community Fish Reserve locations">
+          <div class="section-heading">
+            <p class="eyebrow">Interactive Map</p>
+            <h2>CFR Locations Across Lake Victoria Region</h2>
+            <p class="section-lead">Map highlighting all 15 Community Fish Reserve sites in Homabay, Kisumu, Busia, and Siaya counties.</p>
+          </div>
+          <div id="cfr-map" class="cfr-map" aria-label="Interactive map of Community Fish Reserve locations"></div>
+          <p class="map-note">🗺️ Hover over markers to view reserve details. Click for more information.</p>
+        </section>
+
+        <section class="section cfr-table-wrap reveal" aria-label="Community Fish Reserves table">
+          <div class="section-heading">
+            <p class="eyebrow">Complete Registry</p>
+            <h2>All Community Fish Reserves</h2>
+            <p class="section-lead">A comprehensive table of all 15 CFR sites with location coordinates, area measurements, and county information.</p>
+          </div>
+          <div class="table-scroll" role="region" aria-label="Scrollable table of Community Fish Reserves">
+            <table class="cfr-table">
+              <caption>Community Fish Reserves (CFR) in CoFiRe Network</caption>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Location</th>
+                  <th>Area (Ha)</th>
+                  <th>County</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Roo Community Fish Reserve</td><td>S00032.969'/E034007.642'</td><td>1118</td><td>Homabay</td></tr>
+                <tr><td>2</td><td>Sondu-Miriu River Mouth</td><td>S00002.590'/E034037.941'</td><td>1230</td><td>Homabay</td></tr>
+                <tr><td>3</td><td>Awach River Mouth Community Fish Reserve</td><td>S00020.380'/E034038.380'</td><td>840</td><td>Homabay</td></tr>
+                <tr><td>4</td><td>Ngothe Bay Community Fish Reserve</td><td>S00000.363'/E034034.164'</td><td>780</td><td>Homabay</td></tr>
+                <tr><td>5</td><td>Lela Community Fish Reserve</td><td>S00021.028'/E034042.043'</td><td>712</td><td>Homabay</td></tr>
+                <tr><td>6</td><td>Otiwa Community Fish Reserve</td><td>S00008.821'/E034034.230'</td><td>1040</td><td>Kisumu</td></tr>
+                <tr><td>7</td><td>Nyamarwaka Community Fish Reserve</td><td>S00010.212'/E034026.819'</td><td>530</td><td>Kisumu</td></tr>
+                <tr><td>8</td><td>Kusa Community Fish Reserve</td><td>S00018.084'/E034052.083'</td><td>744</td><td>Kisumu</td></tr>
+                <tr><td>9</td><td>Sio River Mouth Community Fish Reserve</td><td>N00013.267'/E034000.603'</td><td>580</td><td>Busia</td></tr>
+                <tr><td>10</td><td>Nzoia River Mouth Community Fish Reserve</td><td>N00003.495'/E033057.102'</td><td>1300</td><td>Busia</td></tr>
+                <tr><td>11</td><td>Lake Kanyaboli Community Fish Reserve</td><td>N00003.924'/E034008.917'</td><td>1120</td><td>Siaya</td></tr>
+                <tr><td>12</td><td>Lake Sare-Namboyo Community Fish Reserve</td><td>N00003.158'/E034008.992'</td><td>500</td><td>Siaya</td></tr>
+                <tr><td>13</td><td>Kokach Community Fish Reserve</td><td>S00004.334'/E034022.746'</td><td>490</td><td>Siaya</td></tr>
+                <tr><td>14</td><td>Kadedi Community Fish Reserve</td><td>S00011.649'/E034021.317'</td><td>520</td><td>Siaya</td></tr>
+                <tr><td>15</td><td>Kadimo Bay Community Fish Reserve</td><td>S00003.008'/E034009.001'</td><td>712</td><td>Siaya</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <div id="site-footer"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/cfr-network.js"></script>
+  </body>
+</html>
