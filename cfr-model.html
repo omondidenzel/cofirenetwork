@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>CoFiRe-Network | CFR Model</title>
     <meta
       name="description"
@@ -14,7 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/cfr-model.css" />
+    <script>
+      window.__assetVersion = Date.now().toString();
+      document.write('<link rel="stylesheet" href="css/cfr-model.css?v=' + window.__assetVersion + '">');
+    </script>
   </head>
   <body class="cfr-page">
     <div class="page-shell">
@@ -95,7 +101,22 @@
       <div id="site-footer"></div>
     </div>
 
-    <script src="js/layout.js"></script>
-    <script src="js/cfr-model.js"></script>
+    <script>
+      (function () {
+        const v = window.__assetVersion || Date.now().toString();
+        const loadScript = (src) =>
+          new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = src + "?v=" + v;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.body.appendChild(script);
+          });
+
+        loadScript("js/layout.js")
+          .then(() => loadScript("js/cfr-model.js"))
+          .catch((error) => console.error("Asset loading failed:", error));
+      })();
+    </script>
   </body>
 </html>

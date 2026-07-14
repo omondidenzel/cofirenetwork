@@ -3,6 +3,8 @@ const includeTargets = [
   { selector: "#site-footer", file: "partials/footer.html" },
 ];
 
+const assetVersion = (window.__assetVersion || Date.now().toString()).toString();
+
 const loadLayoutPartials = async () => {
   const tasks = includeTargets.map(async ({ selector, file }) => {
     const node = document.querySelector(selector);
@@ -11,7 +13,13 @@ const loadLayoutPartials = async () => {
       return;
     }
 
-    const response = await fetch(file);
+    const separator = file.includes("?") ? "&" : "?";
+    const response = await fetch(`${file}${separator}v=${encodeURIComponent(assetVersion)}`, {
+      cache: "no-store",
+      headers: {
+        "Cache-Control": "no-cache",
+      },
+    });
     if (!response.ok) {
       throw new Error(`Failed to load ${file}`);
     }
