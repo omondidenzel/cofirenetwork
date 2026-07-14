@@ -97,16 +97,21 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 .stat-number { display: block; font-family: 'Newsreader', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 6px; }
 
 /* ===== CFR INTRO ===== */
-.cfr-intro-card {
+.cfr-intro-content {
   position: relative;
   overflow: hidden;
   min-height: clamp(360px, 55vh, 620px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: var(--sp-card);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
 }
 
-.cfr-intro-card::after {
+.cfr-intro-content::after {
   content: '';
   position: absolute;
   inset: auto -80px -120px auto;
@@ -199,7 +204,7 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .cfr-intro-card { min-height: auto; }
+  .cfr-intro-content { min-height: auto; }
   .cfr-map { height: 320px; }
 }
 
