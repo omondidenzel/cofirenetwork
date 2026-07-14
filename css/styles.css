@@ -824,6 +824,74 @@ main {
   gap: 12px;
 }
 
+/* Resources Grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  transition: all 180ms ease;
+  align-content: start;
+}
+
+.resource-card:hover,
+.resource-card:focus-visible {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(219, 111, 46, 0.15);
+}
+
+.resource-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.resource-card h3 {
+  margin: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.resource-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.download-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.download-label::after {
+  content: "⬇";
+  display: inline-block;
+}
+
 .model-preview-cta {
   margin-top: 24px;
   padding-top: 24px;
@@ -849,7 +917,8 @@ main {
   .split-section,
   .model-flow-preview,
   .impact-line,
-  .contact-body {
+  .contact-body,
+  .resources-grid {
     grid-template-columns: 1fr;
   }
 

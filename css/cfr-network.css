@@ -824,6 +824,74 @@ main {
   gap: 12px;
 }
 
+/* Resources Grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  transition: all 180ms ease;
+  align-content: start;
+}
+
+.resource-card:hover,
+.resource-card:focus-visible {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(219, 111, 46, 0.15);
+}
+
+.resource-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.resource-card h3 {
+  margin: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.resource-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.download-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.download-label::after {
+  content: "⬇";
+  display: inline-block;
+}
+
 .model-preview-cta {
   margin-top: 24px;
   padding-top: 24px;
@@ -849,7 +917,8 @@ main {
   .split-section,
   .model-flow-preview,
   .impact-line,
-  .contact-body {
+  .contact-body,
+  .resources-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1003,261 +1072,4 @@ main {
   .coming-soon-eyebrow {
     font-size: 14px;
   }
-}
-
-/* CFR Network Page Specific Styling */
-
-.cfr-intro {
-  background: linear-gradient(135deg, rgba(255, 252, 247, 0.95), rgba(255, 250, 241, 0.88));
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  padding: 48px 40px;
-  margin-bottom: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.cfr-intro-content h1 {
-  font-family: "Newsreader", Georgia, serif;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
-  line-height: 1.1;
-  margin: 0 0 16px 0;
-  color: var(--text);
-}
-
-.cfr-intro-content .section-lead {
-  color: var(--muted);
-  line-height: 1.75;
-  font-size: 1rem;
-  margin: 0;
-}
-
-.cfr-meta {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.meta-item {
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: var(--radius-md);
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.meta-number {
-  display: block;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  font-weight: 800;
-  color: var(--accent);
-  line-height: 1.1;
-}
-
-.meta-item span {
-  display: block;
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-/* Map Section */
-.cfr-map-wrap {
-  background: var(--surface);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  padding: 40px;
-  margin-bottom: 40px;
-}
-
-.cfr-map {
-  width: 100%;
-  height: 500px;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  overflow: hidden;
-  margin: 24px 0;
-  box-shadow: 0 12px 32px rgba(43, 54, 45, 0.15);
-}
-
-.map-note {
-  margin: 16px 0 0 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  text-align: center;
-}
-
-/* Table Section */
-.cfr-table-wrap {
-  background: var(--surface);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  padding: 40px;
-  margin-bottom: 40px;
-}
-
-.table-scroll {
-  overflow-x: auto;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  margin-top: 24px;
-}
-
-.cfr-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
-}
-
-.cfr-table caption {
-  padding: 16px;
-  text-align: left;
-  font-weight: 700;
-  color: var(--text);
-  background: rgba(219, 111, 46, 0.08);
-  border-bottom: 2px solid rgba(219, 111, 46, 0.2);
-}
-
-.cfr-table thead {
-  background: linear-gradient(90deg, rgba(47, 107, 79, 0.08), rgba(219, 111, 46, 0.08));
-}
-
-.cfr-table th {
-  padding: 14px 16px;
-  text-align: left;
-  font-weight: 700;
-  color: var(--accent-dark);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.55);
-  letter-spacing: 0.05em;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-.cfr-table td {
-  padding: 14px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
-  color: var(--muted);
-}
-
-.cfr-table tbody tr {
-  transition: background-color 180ms ease;
-}
-
-.cfr-table tbody tr:hover {
-  background: rgba(219, 111, 46, 0.08);
-}
-
-.cfr-table tbody tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.cfr-table tbody tr:nth-child(even):hover {
-  background: rgba(219, 111, 46, 0.12);
-}
-
-.cfr-table tbody td:first-child {
-  font-weight: 700;
-  color: var(--accent);
-  text-align: center;
-  width: 50px;
-}
-
-.cfr-table tbody td:nth-child(2) {
-  font-weight: 600;
-  color: var(--text);
-}
-
-.cfr-table tbody td:last-child {
-  text-align: center;
-  font-weight: 700;
-  color: var(--forest);
-  background: rgba(47, 107, 79, 0.06);
-}
-
-@media (max-width: 768px) {
-  .cfr-intro {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 32px 24px;
-  }
-
-  .cfr-meta {
-    grid-template-columns: 1fr;
-  }
-
-  .cfr-map-wrap,
-  .cfr-table-wrap {
-    padding: 24px;
-  }
-
-  .cfr-map {
-    height: 400px;
-  }
-
-  .cfr-table {
-    font-size: 0.85rem;
-  }
-
-  .cfr-table th,
-  .cfr-table td {
-    padding: 10px 12px;
-  }
-
-  .table-scroll {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
-@media (max-width: 480px) {
-  .cfr-intro {
-    padding: 24px 16px;
-  }
-
-  .cfr-intro-content h1 {
-    font-size: 1.75rem;
-  }
-
-  .cfr-intro-content .eyebrow {
-    margin-bottom: 12px;
-  }
-
-  .cfr-meta {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .meta-number {
-    font-size: 2rem;
-  }
-
-  .cfr-map {
-    height: 300px;
-  }
-
-  .cfr-map-wrap,
-  .cfr-table-wrap {
-    padding: 16px;
-  }
-
-  .cfr-table {
-    font-size: 0.8rem;
-  }
-
-  .cfr-table th,
-  .cfr-table td {
-    padding: 8px 10px;
-  }
-}
 }
