@@ -7,16 +7,11 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>CoFiRe-Network | CFR Model</title>
-    <meta
-      name="description"
-      content="CFR Model page describing the problem statement, solution statement, and achievements of Community Fish Reserves Network."
-    />
+    <meta name="description" content="CFR Model page describing the problem statement, solution statement, and achievements of Community Fish Reserves Network." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script>
       window.__assetVersion = Date.now().toString();
       document.write('<link rel="stylesheet" href="css/cfr-model.css?v=' + window.__assetVersion + '">');
@@ -27,95 +22,130 @@
       <div id="site-header"></div>
 
       <main id="top">
-        <section class="cfr-intro section reveal">
-          <p class="eyebrow">CFR Model</p>
-          <h1>CFR Model: Problem, Solution, and Achievements</h1>
-          <p class="section-lead">
-            The Community Fish Reserve model is a community-led, area-based conservation approach for freshwater ecosystem restoration,
-            biodiversity protection, fishery sustainability, climate resilience, and stronger livelihoods.
-          </p>
-          <div class="cfr-meta" aria-label="CFR model summary">
-            <p><strong>3</strong> model pillars</p>
-            <p><strong>15</strong> reserves established</p>
-            <p><strong>105,000+</strong> native fish species restocked</p>
-          </div>
-          <!-- <p style="margin-top: 24px;">
-            <a href="files/CFR Guidelines.pdf" class="button button-primary" target="_blank">Download CFR Guidelines</a>
-          </p> -->
-        </section>
 
-        <section class="section text-grid-section ngo-model reveal" aria-label="Detailed CFR model components">
-          <div class="model-pill-row" aria-label="CFR model trust signals">
-            <span>Community-led</span>
-            <span>Area-based conservation</span>
-            <span>Scalable impact</span>
-          </div>
-          <div class="model-flow">
-            <article class="model-block model-problem">
-              <p class="model-badge">01</p>
-              <p class="model-kicker">Challenge</p>
-              <h2 class="model-title">Problem Statement</h2>
-              <p class="model-content">
-                Degradation and loss of freshwater ecosystems, biodiversity, fisheries and associated livelihoods. Illegal, unreported,
-                and unregulated fishing (IUU), gender-based violence, human-wildlife conflicts, climate change and floods,
-                food and nutritional insecurity, unemployment, school drop-outs and child labour.
+        <!-- Intro -->
+        <section class="mb-4 reveal" aria-label="CFR Model overview">
+          <div class="card">
+            <div class="card-body">
+              <p class="eyebrow">CFR Model</p>
+              <h1 class="mb-3">CFR Model: Problem, Solution, and Achievements</h1>
+              <p class="section-lead mb-4">
+                The Community Fish Reserve model is a community-led, area-based conservation approach for freshwater ecosystem restoration,
+                biodiversity protection, fishery sustainability, climate resilience, and stronger livelihoods.
               </p>
-            </article>
-
-            <article class="model-block model-solution">
-              <p class="model-badge">02</p>
-              <p class="model-kicker">Response</p>
-              <h2 class="model-title">Solution Statement</h2>
-              <ul class="model-list">
-                <li>Community Fish Reserves establishment including riparian zone, fish breeding zone and right fishing zone.</li>
-                <li>Capacity building on fisheries co-management including designation, demarcation, monitoring, control and surveillance of CoFiRes.</li>
-                <li>Joint Co-Managed Area and Joint Locally Co-Managed Areas Network as legitimized by national fisheries policy and guidelines.</li>
-                <li>Mobilization, recruitment and registration of CoFiRes in CoFiRes Network.</li>
-                <li>Gazettement of CoFiRe and legal pathway strengthening.</li>
-                <li>Linking and networking with OECMs advancement platforms.</li>
-                <li>Native fish species restocking and habitat recovery.</li>
-                <li>CoFiRe management plans, conservation investment plans and trust fund approaches.</li>
-                <li>Empowerment of women and youth through livelihood pathways including self-help groups, savings and loaning, SACCOs and enterprises.</li>
-                <li>Nature-based solutions through riparian restoration, native fish restocking and regenerative agriculture.</li>
-                <li>Room for replication and scaling in Kenya, Lake Victoria Region and Africa Great Lakes Region.</li>
-              </ul>
-            </article>
-
-            <article class="model-block model-achievements">
-              <p class="model-badge">03</p>
-              <p class="model-kicker">Impact</p>
-              <h2 class="model-title">Achievements</h2>
-              <ul class="model-list">
-                <li>Three years in operation and already established 15 CoFiRes with strong scalability potential.</li>
-                <li>Over 105,000 native fish species restocked, especially native tilapia.</li>
-                <li>Improved fishing practices, habitat condition, fish stock and recording of native species.</li>
-                <li>Legal support secured through Whitley Legal Fund for gazettement detail work.</li>
-                <li>Guideline report support for inland freshwater OECMs by FAO.</li>
-                <li>Women and youth participation strengthened in conservation and associated empowerment processes.</li>
-              </ul>
-            </article>
+              <div class="row g-3" aria-label="CFR model summary">
+                <div class="col-sm-4">
+                  <div class="impact-stat text-center">
+                    <span class="stat-number">3</span>
+                    <span class="section-lead" style="font-size:0.9rem;">Model pillars</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="impact-stat text-center">
+                    <span class="stat-number">15</span>
+                    <span class="section-lead" style="font-size:0.9rem;">Reserves established</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="impact-stat text-center">
+                    <span class="stat-number">105K+</span>
+                    <span class="section-lead" style="font-size:0.9rem;">Native fish restocked</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+
+        <!-- Model Detail -->
+        <section class="mb-4 reveal" aria-label="Detailed CFR model components">
+          <div class="card">
+            <div class="card-body">
+              <div class="model-pill-row mb-4" aria-label="CFR model trust signals">
+                <span>Community-led</span>
+                <span>Area-based conservation</span>
+                <span>Scalable impact</span>
+              </div>
+              <div class="row g-4">
+
+                <div class="col-lg-4">
+                  <div class="card h-100" style="background:rgba(255,255,255,0.45);">
+                    <div class="card-body">
+                      <div class="model-badge">01</div>
+                      <p class="model-kicker">Challenge</p>
+                      <h2 class="mb-3" style="font-size:clamp(1.3rem,2.5vw,1.7rem);">Problem Statement</h2>
+                      <p class="section-lead" style="font-size:0.92rem;">
+                        Degradation and loss of freshwater ecosystems, biodiversity, fisheries and associated livelihoods.
+                        Illegal, unreported, and unregulated fishing (IUU), gender-based violence, human-wildlife conflicts,
+                        climate change and floods, food and nutritional insecurity, unemployment, school drop-outs and child labour.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="card h-100" style="background:rgba(255,255,255,0.45);">
+                    <div class="card-body">
+                      <div class="model-badge">02</div>
+                      <p class="model-kicker">Response</p>
+                      <h2 class="mb-3" style="font-size:clamp(1.3rem,2.5vw,1.7rem);">Solution Statement</h2>
+                      <ul class="model-list">
+                        <li>Community Fish Reserves establishment including riparian zone, fish breeding zone and right fishing zone.</li>
+                        <li>Capacity building on fisheries co-management including designation, demarcation, monitoring, control and surveillance.</li>
+                        <li>Joint Co-Managed Area Networks as legitimized by national fisheries policy and guidelines.</li>
+                        <li>Mobilization, recruitment and registration of CoFiRes in CoFiRe Network.</li>
+                        <li>Gazettement of CoFiRe and legal pathway strengthening.</li>
+                        <li>Linking and networking with OECMs advancement platforms.</li>
+                        <li>Native fish species restocking and habitat recovery.</li>
+                        <li>CoFiRe management plans, conservation investment plans and trust fund approaches.</li>
+                        <li>Empowerment of women and youth through livelihood pathways including self-help groups, SACCOs and enterprises.</li>
+                        <li>Nature-based solutions through riparian restoration, native fish restocking and regenerative agriculture.</li>
+                        <li>Room for replication and scaling in Kenya, Lake Victoria Region and Africa Great Lakes Region.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="card h-100" style="background:rgba(255,255,255,0.45);">
+                    <div class="card-body">
+                      <div class="model-badge">03</div>
+                      <p class="model-kicker">Impact</p>
+                      <h2 class="mb-3" style="font-size:clamp(1.3rem,2.5vw,1.7rem);">Achievements</h2>
+                      <ul class="model-list">
+                        <li>Three years in operation and already established 15 CoFiRes with strong scalability potential.</li>
+                        <li>Over 105,000 native fish species restocked, especially native tilapia.</li>
+                        <li>Improved fishing practices, habitat condition, fish stock and recording of native species.</li>
+                        <li>Legal support secured through Whitley Legal Fund for gazettement detail work.</li>
+                        <li>Guideline report support for inland freshwater OECMs by FAO.</li>
+                        <li>Women and youth participation strengthened in conservation and associated empowerment processes.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <div id="site-footer"></div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       (function () {
         const v = window.__assetVersion || Date.now().toString();
-        const loadScript = (src) =>
-          new Promise((resolve, reject) => {
-            const script = document.createElement("script");
-            script.src = src + "?v=" + v;
-            script.onload = resolve;
-            script.onerror = reject;
-            document.body.appendChild(script);
-          });
-
-        loadScript("js/layout.js")
-          .then(() => loadScript("js/cfr-model.js"))
-          .catch((error) => console.error("Asset loading failed:", error));
+        const loadScript = (src) => new Promise((resolve, reject) => {
+          const s = document.createElement('script');
+          s.src = src + '?v=' + v;
+          s.onload = resolve;
+          s.onerror = reject;
+          document.body.appendChild(s);
+        });
+        loadScript('js/layout.js').then(() => loadScript('js/cfr-model.js')).catch(e => console.error('Asset loading failed:', e));
       })();
     </script>
   </body>
