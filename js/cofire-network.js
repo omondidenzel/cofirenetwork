@@ -1,7 +1,7 @@
-const mapNode = document.getElementById("cfr-map");
+const mapNode = document.getElementById("cofire-map");
 
 if (mapNode && window.L) {
-  const cfrSites = [
+  const cofireSites = [
     { no: 1, name: "Roo Community Fish Reserve", location: "S00032.969'/E034007.642'", area: 1118, county: "Homabay", lat: -0.549483, lng: 34.127367 },
     { no: 2, name: "Sondu-Miriu River Mouth", location: "S00002.590'/E034037.941'", area: 1230, county: "Homabay", lat: -0.043167, lng: 34.63235 },
     { no: 3, name: "Awach River Mouth Community Fish Reserve", location: "S00020.380'/E034038.380'", area: 840, county: "Homabay", lat: -0.339667, lng: 34.639667 },
@@ -26,7 +26,7 @@ if (mapNode && window.L) {
     Siaya: "#8b5fbf",
   };
 
-  const map = L.map("cfr-map", {
+  const map = L.map("cofire-map", {
     zoomControl: true,
     scrollWheelZoom: false,
   });
@@ -38,7 +38,7 @@ if (mapNode && window.L) {
 
   const points = [];
 
-  cfrSites.forEach((site) => {
+  cofireSites.forEach((site) => {
     const marker = L.circleMarker([site.lat, site.lng], {
       radius: 7,
       fillColor: countyColor[site.county] || "#2f6b4f",

@@ -77,6 +77,20 @@ a { text-decoration: none; color: inherit; }
 .card-body { padding: 2.25rem; }
 
 /* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-align: center;
+  line-height: 1.25;
+  padding: 0.65rem 1rem !important;
+}
+
 .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-dark)) !important; border: none !important; border-radius: 999px !important; font-weight: 700; min-height: 46px; color: #fff !important; transition: transform 180ms ease, box-shadow 180ms ease; }
 .btn-primary:hover, .btn-primary:focus { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(30, 80, 126, 0.35) !important; }
 .btn-outline-secondary { border-radius: 999px !important; font-weight: 700; min-height: 46px; color: var(--text) !important; border-color: var(--line) !important; background: rgba(255,255,255,0.8) !important; transition: transform 180ms ease; }
@@ -96,8 +110,8 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 /* ===== STAT NUMBERS ===== */
 .stat-number { display: block; font-family: 'Newsreader', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 6px; }
 
-/* ===== CFR INTRO ===== */
-.cfr-intro-card {
+/* ===== COFIRE INTRO ===== */
+.cofire-intro-card {
   position: relative;
   overflow: hidden;
   min-height: clamp(360px, 55vh, 620px);
@@ -106,7 +120,7 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
   justify-content: center;
 }
 
-.cfr-intro-card::after {
+.cofire-intro-card::after {
   content: '';
   position: absolute;
   inset: auto -80px -120px auto;
@@ -117,7 +131,7 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
   pointer-events: none;
 }
 
-.cfr-meta-panel {
+.cofire-meta-panel {
   background: linear-gradient(160deg, rgba(42, 94, 61, 0.93), rgba(26, 52, 36, 0.94));
   border-radius: var(--radius-lg);
   padding: 1.5rem;
@@ -133,9 +147,9 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 .meta-number { display: block; font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1; color: #fff; font-weight: 800; }
 .meta-item span { color: rgba(230,245,247,0.78); font-size: 0.88rem; }
 
-.cfr-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+.cofire-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
 
-.cfr-tag {
+.cofire-tag {
   display: inline-flex;
   align-items: center;
   min-height: 30px;
@@ -149,7 +163,7 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 }
 
 /* ===== MAP ===== */
-.cfr-map { width: 100%; height: clamp(360px, 52vh, 560px); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.55); box-shadow: 0 12px 30px rgba(20,38,42,0.14); overflow: hidden; }
+.cofire-map { width: 100%; height: clamp(360px, 52vh, 560px); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.55); box-shadow: 0 12px 30px rgba(20,38,42,0.14); overflow: hidden; }
 
 .map-insights { border-radius: var(--radius-md); background: linear-gradient(160deg, rgba(45,107,71,0.92), rgba(28,60,40,0.92)); color: #eaf5ee; padding: 1.25rem; height: 100%; }
 .map-insights h3 { font-family: 'Newsreader', Georgia, serif; font-size: 1.3rem; margin-bottom: 1rem; }
@@ -170,9 +184,9 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 /* ===== TABLE ===== */
 .table-scroll { overflow-x: auto; border-radius: var(--radius-md); }
 
-.cfr-table { margin-bottom: 0; }
+.cofire-table { margin-bottom: 0; }
 
-.cfr-table thead th {
+.cofire-table thead th {
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: #fff;
   font-size: 0.82rem;
@@ -182,10 +196,10 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
   padding: 13px 16px;
 }
 
-.cfr-table tbody tr:hover td { background: rgba(30, 80, 126, 0.05); }
-.cfr-table td { padding: 11px 16px; color: var(--muted); border-color: var(--line); font-size: 0.88rem; vertical-align: middle; }
-.cfr-table td:first-child { font-weight: 700; color: var(--accent); }
-.cfr-table td:nth-child(2) { color: var(--text); font-weight: 600; }
+.cofire-table tbody tr:hover td { background: rgba(30, 80, 126, 0.05); }
+.cofire-table td { padding: 11px 16px; color: var(--muted); border-color: var(--line); font-size: 0.88rem; vertical-align: middle; }
+.cofire-table td:first-child { font-weight: 700; color: var(--accent); }
+.cofire-table td:nth-child(2) { color: var(--text); font-weight: 600; }
 
 /* ===== REGISTRY HIGHLIGHTS ===== */
 .registry-highlight { padding: 1.25rem 1.5rem; background: rgba(255,255,255,0.45); border: 1px solid rgba(255,255,255,0.55); border-radius: var(--radius-md); height: 100%; }
@@ -199,13 +213,14 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .cfr-intro-card { min-height: auto; }
-  .cfr-map { height: 320px; }
+  .cofire-intro-card { min-height: auto; }
+  .cofire-map { height: 320px; }
 }
 
 @media (max-width: 576px) {
+  .btn { width: 100%; }
   .page-shell { padding: 16px 16px 24px; }
   .site-header { border-radius: 16px; }
   .card-body { padding: 1.25rem; }
-  .cfr-meta-panel { min-height: auto; }
+  .cofire-meta-panel { min-height: auto; }
 }

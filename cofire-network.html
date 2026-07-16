@@ -6,8 +6,8 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>CoFiRe-Network | CFR Network</title>
-    <meta name="description" content="Community Fish Reserves (CFR) Network page showing reserve locations, areas, counties, and an interactive map." />
+    <title>CoFiRe-Network | CoFiRe Network</title>
+    <meta name="description" content="Community Fish Reserves (CoFiRe) Network page showing reserve locations, areas, counties, and an interactive map." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet" />
@@ -15,37 +15,37 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script>
       window.__assetVersion = Date.now().toString();
-      document.write('<link rel="stylesheet" href="css/cfr-network.css?v=' + window.__assetVersion + '">');
+      document.write('<link rel="stylesheet" href="css/cofire-network.css?v=' + window.__assetVersion + '">');
     </script>
   </head>
-  <body class="cfr-page">
+  <body class="cofire-page">
     <div class="page-shell">
       <div id="site-header"></div>
 
       <main id="top">
 
         <!-- Intro -->
-        <section class="mb-4 reveal" aria-label="CFR Network overview">
+        <section class="mb-4 reveal" aria-label="CoFiRe Network overview">
           <div class="row g-4 align-items-stretch">
             <div class="col-lg-8">
-              <div class="card cfr-intro-card h-100">
+              <div class="card cofire-intro-card h-100">
                 <div class="card-body">
-                  <p class="eyebrow">CFR Network</p>
+                  <p class="eyebrow">CoFiRe Network</p>
                   <h1 class="mb-3">Community Fish Reserves Network</h1>
                   <p class="section-lead mb-3">
-                    The following Community Fish Reserves (CFR) constitute the Community Fish Reserves Network (CoFiRe Network).
-                    Recruitment of more CFRs is ongoing for impact at scale.
+                    The following Community Fish Reserves (CoFiRe) constitute the Community Fish Reserves Network (CoFiRe Network).
+                    Recruitment of more CoFiRes is ongoing for impact at scale.
                   </p>
-                  <div class="cfr-tags" aria-label="CFR Network themes">
-                    <span class="cfr-tag">Area-based conservation</span>
-                    <span class="cfr-tag">Fisherfolk-led stewardship</span>
-                    <span class="cfr-tag">Lake Victoria freshwater resilience</span>
+                  <div class="cofire-tags" aria-label="CoFiRe Network themes">
+                    <span class="cofire-tag">Area-based conservation</span>
+                    <span class="cofire-tag">Fisherfolk-led stewardship</span>
+                    <span class="cofire-tag">Lake Victoria freshwater resilience</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="cfr-meta-panel" aria-label="CFR network summary">
+              <div class="cofire-meta-panel" aria-label="CoFiRe network summary">
                 <div class="meta-item">
                   <strong class="meta-number">15</strong>
                   <span>Active Reserves</span>
@@ -68,11 +68,11 @@
           <div class="card">
             <div class="card-body">
               <p class="eyebrow">Interactive Map</p>
-              <h2 class="mb-2">CFR Locations Across Lake Victoria Region</h2>
+              <h2 class="mb-2">CoFiRe Locations Across Lake Victoria Region</h2>
               <p class="section-lead mb-4">Map highlighting all 15 Community Fish Reserve sites in Homabay, Kisumu, Busia, and Siaya counties.</p>
               <div class="row g-3">
                 <div class="col-lg-9">
-                  <div id="cfr-map" class="cfr-map" aria-label="Interactive map of Community Fish Reserve locations"></div>
+                  <div id="cofire-map" class="cofire-map" aria-label="Interactive map of Community Fish Reserve locations"></div>
                 </div>
                 <div class="col-lg-3">
                   <div class="map-insights" aria-label="County breakdown">
@@ -98,12 +98,12 @@
             <div class="card-body">
               <p class="eyebrow">Complete Registry</p>
               <h2 class="mb-2">All Community Fish Reserves</h2>
-              <p class="section-lead mb-4">A comprehensive table of all 15 CFR sites with location coordinates, area measurements, and county information.</p>
+              <p class="section-lead mb-4">A comprehensive table of all 15 CoFiRe sites with location coordinates, area measurements, and county information.</p>
               <div class="row g-3 mb-4" aria-label="Registry quick facts">
                 <div class="col-md-4">
                   <div class="registry-highlight">
                     <span class="stat-number">15</span>
-                    <span class="section-lead" style="font-size:0.9rem;">Total registered CFR sites</span>
+                    <span class="section-lead" style="font-size:0.9rem;">Total registered CoFiRe sites</span>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -120,8 +120,8 @@
                 </div>
               </div>
               <div class="table-scroll" role="region" aria-label="Scrollable table of Community Fish Reserves">
-                <table class="table table-hover cfr-table">
-                  <caption class="visually-hidden">Community Fish Reserves (CFR) in CoFiRe Network</caption>
+                <table class="table table-hover cofire-table">
+                  <caption class="visually-hidden">Community Fish Reserves (CoFiRe) in CoFiRe Network</caption>
                   <thead>
                     <tr>
                       <th scope="col">No</th>
@@ -171,7 +171,7 @@
           s.onerror = reject;
           document.body.appendChild(s);
         });
-        loadScript('js/layout.js').then(() => loadScript('js/cfr-network.js')).catch(e => console.error('Asset loading failed:', e));
+        loadScript('js/layout.js').then(() => loadScript('js/cofire-network.js')).catch(e => console.error('Asset loading failed:', e));
       })();
     </script>
   </body>

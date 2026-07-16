@@ -109,6 +109,20 @@ a { text-decoration: none; color: inherit; }
 .card-body { padding: 2.25rem; }
 
 /* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-align: center;
+  line-height: 1.25;
+  padding: 0.65rem 1rem !important;
+}
+
 .btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-dark)) !important;
   border: none !important;
@@ -393,6 +407,7 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  .btn { width: 100%; }
   .manifesto-strip { grid-template-columns: 1fr; }
   .photo-item { width: 230px; }
   .photo-item img { height: 200px; }
