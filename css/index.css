@@ -251,7 +251,7 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
   flex-shrink: 0;
 }
 
-.photo-item img { width: 100%; height: 400px; object-fit: cover; display: block; }
+.photo-item img { width: 100%; height: 450px; object-fit: cover; display: block; }
 
 @keyframes photo-marquee {
   from { transform: translateX(0); }
@@ -423,3 +423,4 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
   .hero-aside { padding: 1.5rem; }
   .section-body { padding: 1.5rem; }
 }
+
