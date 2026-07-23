@@ -37,7 +37,7 @@ a { text-decoration: none; color: inherit; }
 /* ===== NAVBAR ===== */
 .site-header { background: rgba(251, 247, 240, 0.96) !important; border-radius: 999px; border: 1px solid rgba(255,255,255,0.55); backdrop-filter: blur(18px); box-shadow: 0 8px 24px rgba(18,36,42,0.12); margin-bottom: 2rem; padding: 0.45rem 1.25rem; }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 800; color: var(--text); text-decoration: none; }
-.brand-mark { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: #fff; background: linear-gradient(135deg, var(--accent), var(--forest)); font-size: 0.9rem; font-weight: 800; flex-shrink: 0; }
+.brand-logo { width: 46px; height: 46px; object-fit: contain; border-radius: 12px; flex-shrink: 0; }
 .brand-lockup { display: flex; flex-direction: column; line-height: 1.25; }
 .brand-text { font-size: 0.92rem; }
 .brand-subtitle { font-size: 0.68rem; color: var(--muted); font-weight: 500; }
@@ -107,6 +107,7 @@ h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 576px) {
+  .brand-logo { width: 38px; height: 38px; }
   .btn { width: 100%; }
   .page-shell { padding: 16px 16px 24px; }
   .site-header { border-radius: 16px; }

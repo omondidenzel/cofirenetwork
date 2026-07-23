@@ -48,16 +48,11 @@ a { text-decoration: none; color: inherit; }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 800; color: var(--text); text-decoration: none; }
 
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  color: #fff;
-  background: linear-gradient(135deg, var(--accent), var(--forest));
-  font-size: 0.9rem;
-  font-weight: 800;
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 12px;
   flex-shrink: 0;
 }
 
@@ -213,6 +208,7 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  .brand-logo { width: 38px; height: 38px; }
   .cofire-intro-card { min-height: auto; }
   .cofire-map { height: 320px; }
 }
