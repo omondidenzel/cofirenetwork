@@ -35,18 +35,18 @@ a { text-decoration: none; color: inherit; }
 .page-shell { width: 100%; padding: 24px var(--page-pad) 40px; box-sizing: border-box; }
 
 /* ===== NAVBAR ===== */
-.site-header { background: rgba(251, 247, 240, 0.96) !important; border-radius: 999px; border: 1px solid rgba(255,255,255,0.55); backdrop-filter: blur(18px); box-shadow: 0 8px 24px rgba(18,36,42,0.12); margin-bottom: 2rem; padding: 0.45rem 1.25rem; }
+.site-header { background: rgba(251, 247, 240, 0.96) !important; border-radius: 999px; border: 1px solid rgba(255,255,255,0.55); backdrop-filter: blur(18px); box-shadow: 0 8px 24px rgba(18,36,42,0.12); margin-bottom: 2rem; padding: 0.6rem 1.35rem; }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 800; color: var(--text); text-decoration: none; }
-.brand-logo { width: 46px; height: 46px; object-fit: contain; border-radius: 12px; flex-shrink: 0; }
-.brand-lockup { display: flex; flex-direction: column; line-height: 1.25; }
-.brand-text { font-size: 0.92rem; }
-.brand-subtitle { font-size: 0.68rem; color: var(--muted); font-weight: 500; }
+.brand-logo { width: 58px; height: 58px; object-fit: contain; border-radius: 12px; flex-shrink: 0; }
+.brand-lockup { display: flex; flex-direction: column; line-height: 1.15; }
+.brand-text { font-size: 1.06rem; }
+.brand-subtitle { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
 .navbar-toggler { border-color: rgba(20,125,138,0.3) !important; }
 .navbar-toggler:focus { box-shadow: 0 0 0 0.2rem rgba(20,125,138,0.15); }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231e507e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-.nav-link { color: var(--muted) !important; font-weight: 600; font-size: 0.88rem; border-radius: 999px; padding: 0.35rem 0.85rem !important; transition: color 160ms, background 160ms; }
+.nav-link { color: var(--muted) !important; font-weight: 600; font-size: 1rem; border-radius: 999px; padding: 0.55rem 1rem !important; transition: color 160ms, background 160ms; }
 .nav-link:hover, .nav-link.is-active { color: var(--text) !important; background: rgba(20,125,138,0.1); }
 
 /* ===== CARDS ===== */

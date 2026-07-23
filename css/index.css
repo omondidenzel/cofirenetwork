@@ -48,7 +48,7 @@ a { text-decoration: none; color: inherit; }
   backdrop-filter: blur(18px);
   box-shadow: 0 8px 24px rgba(28, 26, 22, 0.12);
   margin-bottom: 2rem;
-  padding: 0.45rem 1.25rem;
+  padding: 0.6rem 1.35rem;
 }
 
 .brand {
@@ -61,16 +61,16 @@ a { text-decoration: none; color: inherit; }
 }
 
 .brand-logo {
-  width: 46px;
-  height: 46px;
+  width: 58px;
+  height: 58px;
   object-fit: contain;
   border-radius: 12px;
   flex-shrink: 0;
 }
 
 .brand-lockup { display: flex; flex-direction: column; line-height: 1.25; }
-.brand-text { font-size: 0.92rem; }
-.brand-subtitle { font-size: 0.68rem; color: var(--muted); font-weight: 500; }
+.brand-text { font-size: 1.06rem; }
+.brand-subtitle { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
 
 .navbar-toggler { border-color: rgba(30, 80, 126, 0.28) !important; }
 .navbar-toggler:focus { box-shadow: 0 0 0 0.2rem rgba(30, 80, 126, 0.14); }
@@ -81,9 +81,9 @@ a { text-decoration: none; color: inherit; }
 .nav-link {
   color: var(--muted) !important;
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 1rem;
   border-radius: 999px;
-  padding: 0.35rem 0.85rem !important;
+  padding: 0.55rem 1rem !important;
   transition: color 160ms, background 160ms;
 }
 
